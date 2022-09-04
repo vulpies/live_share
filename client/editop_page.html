@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/client/styles/index.css">
+
+	<script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+		integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+	<script defer src="script.js"></script>
+</head>
+
+<body>
+	<div class='editorWrapper'>
+
+		<div class='aside'>
+			<div class='aside__inner'>
+
+				<div class='aside__title'>
+					<h3>Connected</h3>
+				</div>
+
+				<div class='aside__users' id="asideUsers">
+
+				</div>
+			</div>
+
+			<a href="/client/" class='btn btn-leave'>Leave room</a>
+
+		</div>
+
+		<div class='main'> -->
+			</textarea>
+			<textarea placeholder="Enter HTML Source Code" сlass="main__area" id="editing" spellcheck="false"
+				oninput="update(this.value); sync_scroll(this);" onscroll="sync_scroll(this);"
+				onkeydown="check_tab(this, event);" onkeyup="send(this.value)"></textarea>
+			<pre id="highlighting" aria-hidden="true">
+			<code class="language-js" id="highlighting-content">
+			</code>
+			</pre>
+		</div>
+
+	</div>
+	<script src="editor.js"></script>
+</body>
+
+</html>

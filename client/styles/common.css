@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "AnelizaRegular" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding: 0;
+    background: url("../images/bcg_main.jpg") no-repeat center bottom / cover
+        fixed;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #df8807;
+    outline-color: #bd4305;
+    padding: 2px 5px;
+}
+
+a:hover {
+    color: #d11313;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.btn-leave {
+    background-color: rgb(236, 246, 252);
+    color: rgb(12, 12, 12);
+    padding: 5px 8px;
+    width: 120px;
+    border: 2px solid #000;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn-leave:hover {
+    background-color: #00c4ff;
+    color: rgb(12, 12, 12);
+}
+
+.btn-enter {
+    background-color: #fef0dd;
+    border: 2px solid #c6700c;
+    width: 105px;
+}
+
+.btn-enter:hover {
+    background-color: yellow;
+    color: #000;
+}

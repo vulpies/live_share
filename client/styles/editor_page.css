@@ -1,0 +1,78 @@
+.editorWrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    height: auto;
+    background-color: #c2d1da;
+}
+
+.aside {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 15px;
+    justify-content: space-between;
+    background-color: #185a82;
+    color: #fff;
+}
+
+.aside__inner {
+    flex: 1;
+}
+
+.aside__title {
+    width: 110%;
+    border-bottom: 2px solid;
+    margin: 0 -15px 0px -15px;
+    padding: 0 10px 10px;
+    text-align: center;
+}
+
+.aside__title > h3 {
+    font-size: 1.5rem;
+}
+
+.aside__users {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.aside__user {
+    margin: 0 15px 15px 0;
+}
+
+.aside__user-name {
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    min-height: 100%;
+}
+
+textarea {
+    /* width: 100% !important; */
+    /* height: 100vh !important; */
+    /* background-color: #cedeec;
+    color: #000;
+    font-size: 23px; */
+    padding: 7px 0 0 14px;
+}
+
+#editing {
+    background-color: #cedeec !important;
+    color: #000 !important;
+    font-size: 23px;
+    border: 2px solid #118fd0 !important;
+    caret-color: rgb(62, 5, 5) !important;
+}
